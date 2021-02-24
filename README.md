@@ -20,5 +20,5 @@ samples, guidance on mobile development, and a full API reference.
 ## screen 480x800
 ![image](https://user-images.githubusercontent.com/39553951/108964643-4e997900-76ae-11eb-8188-a28a7298fbee.png)
 ## normal screen 
-![Screenshot_20210224-115244515](https://user-images.githubusercontent.com/39553951/108949442-002cb000-7697-11eb-9700-81ccdc888704.jpg)
+![Screenshot_20210224-144145166](https://user-images.githubusercontent.com/39553951/108964881-a2a45d80-76ae-11eb-9a5b-e8c640c16fd5.jpg)
 
