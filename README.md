@@ -18,8 +18,9 @@ samples, guidance on mobile development, and a full API reference.
 ![New-MetaTrader-5-iOS-build-1509-Login-to-MQL5 com-with-Facebook-MetaQuotes-Software-Corp -iphone-ipad](https://user-images.githubusercontent.com/39553951/108826517-f489ac80-75f6-11eb-9826-19536793e8db.png)
 
 ## screen 480x800
-![Screenshot_1614155299](https://user-images.githubusercontent.com/39553951/108971514-f87c0400-76b4-11eb-8375-7f7bc9e236eb.png)
+![Screenshot_1614248101](https://user-images.githubusercontent.com/39553951/109140425-2a619900-778f-11eb-85fb-e62a349952f9.png)
+
 
 ## normal screen 
-![Screenshot_20210224-153014496](https://user-images.githubusercontent.com/39553951/108972135-98399200-76b5-11eb-94a2-cb7f46dff3d6.jpg)
+![Screenshot_20210225-171512600](https://user-images.githubusercontent.com/39553951/109140430-2b92c600-778f-11eb-8e92-dec63138a8ee.jpg)
 
