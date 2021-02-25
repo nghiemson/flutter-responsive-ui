@@ -44,7 +44,8 @@ class HomePage extends StatelessWidget {
                               child: Text(
                                 'Cancel',
                                 style: TextStyle(
-                                    fontSize: 17, fontFamily: 'Roboto'),
+                                    fontSize: size.width * 0.05,
+                                    fontFamily: 'Roboto'),
                               ),
                               textColor: Colors.white,
                               padding: EdgeInsets.all(0),
@@ -59,7 +60,7 @@ class HomePage extends StatelessWidget {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 17,
+                                      fontSize: size.width * 0.05,
                                       fontFamily: 'Roboto'),
                                 ),
                               ))
@@ -110,7 +111,7 @@ class HomePage extends StatelessWidget {
                                 decoration: InputDecoration(
                                     labelText: 'Login',
                                     labelStyle: TextStyle(
-                                        fontSize: 20,
+                                        fontSize: size.width * 0.055,
                                         fontWeight: FontWeight.w800,
                                         fontFamily: 'Roboto'),
                                     hintText: 'enter login',
@@ -127,7 +128,7 @@ class HomePage extends StatelessWidget {
                                 decoration: InputDecoration(
                                     labelText: 'Email',
                                     labelStyle: TextStyle(
-                                        fontSize: 20,
+                                        fontSize: size.width * 0.055,
                                         fontWeight: FontWeight.w800,
                                         fontFamily: 'Roboto'),
                                     hintText: 'email',
@@ -164,7 +165,7 @@ class HomePage extends StatelessWidget {
                           'Register',
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-                        color: Colors.amber.shade600,
+                        color: Colors.amber.shade500,
                       ),
                     ),
                     Text(
@@ -192,11 +193,12 @@ class HomePage extends StatelessWidget {
                               style: TextStyle(
                                   color: Colors.blue.shade900,
                                   fontFamily: 'Roboto',
-                                  fontWeight: FontWeight.w500),
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: size.width * 0.042),
                             ),
                           ],
                         ),
-                        color: Colors.blue.shade50,
+                        color: Colors.grey.shade200,
                       ),
                     ),
                   ]),
