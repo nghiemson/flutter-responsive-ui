@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,15 +18,14 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Container(
         child: Stack(children: [
           Image.asset(
             'images/login_background.png',
+            width: double.infinity,
+            height: double.infinity,
             fit: BoxFit.cover,
-            height: size.height,
-            width: size.width,
           ),
           SafeArea(
               child: SingleChildScrollView(
@@ -44,8 +44,7 @@ class HomePage extends StatelessWidget {
                               child: Text(
                                 'Cancel',
                                 style: TextStyle(
-                                    fontSize: size.width * 0.05,
-                                    fontFamily: 'Roboto'),
+                                    fontSize: 15, fontFamily: 'Roboto'),
                               ),
                               textColor: Colors.white,
                               padding: EdgeInsets.all(0),
@@ -60,106 +59,121 @@ class HomePage extends StatelessWidget {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: size.width * 0.05,
+                                      fontSize: 16,
                                       fontFamily: 'Roboto'),
                                 ),
                               ))
                         ],
                       ),
                     ),
-                    SizedBox(
-                      height: size.height * 0.04,
-                    ),
                     Container(
-                        width: size.width * 0.25,
+                        margin: EdgeInsets.symmetric(horizontal: 115),
                         child: Image.asset('images/MQL5.png')),
-                    SizedBox(
-                      height: size.height * 0.02,
-                    ),
                     Container(
-                      width: size.width * 0.75,
-                      child: Flexible(
-                        child: Text(
-                          'Join Traders Community www.mql5.com',
-                          style: TextStyle(
-                            fontSize: size.width * 0.065,
-                            fontFamily: 'Roboto',
-                            color: Colors.white,
-                          ),
-                          maxLines: 2,
-                          textAlign: TextAlign.center,
+                      margin: EdgeInsets.symmetric(horizontal: 25),
+                      child: Text(
+                        'Join Traders Community www.mql5.com',
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontFamily: 'Roboto',
+                          color: Colors.white,
                         ),
+                        maxLines: 2,
+                        textAlign: TextAlign.center,
                       ),
                     ),
-                    SizedBox(
-                      height: size.height * 0.025,
-                    ),
                     Container(
-                      width: size.width * 0.7,
-                      height: size.height * 0.13,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(3),
-                          color: Colors.white),
+                      padding: EdgeInsets.only(
+                          left: 15, right: 15, top: 5, bottom: 5),
                       margin: EdgeInsets.only(
-                          left: 50, right: 50, top: 20, bottom: 10),
-                      padding: EdgeInsets.symmetric(horizontal: 10),
+                          bottom: 20, top: 20, left: 50, right: 50),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(3),
+                      ),
                       child: Column(
+                        mainAxisSize: MainAxisSize.min,
                         children: [
-                          Expanded(
-                            child: TextField(
-                                textAlign: TextAlign.right,
-                                decoration: InputDecoration(
-                                    labelText: 'Login',
-                                    labelStyle: TextStyle(
-                                        fontSize: size.width * 0.055,
-                                        fontWeight: FontWeight.w800,
-                                        fontFamily: 'Roboto'),
-                                    hintText: 'enter login',
+                          Row(
+                            children: [
+                              Container(
+                                padding: EdgeInsets.only(right: 10),
+                                child: Text(
+                                  "Login",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 15,
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                child: TextField(
+                                  textAlign: TextAlign.right,
+                                  decoration: InputDecoration(
+                                    hintText: "enter login",
+                                    border: InputBorder.none,
+                                    isDense: true,
                                     hintStyle: TextStyle(
                                       color: Colors.black26,
-                                      fontSize: size.width * 0.04,
+                                      fontSize: 15,
                                     ),
-                                    floatingLabelBehavior:
-                                        FloatingLabelBehavior.always)),
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
-                          Expanded(
-                            child: TextField(
-                                textAlign: TextAlign.right,
-                                decoration: InputDecoration(
-                                    labelText: 'Email',
-                                    labelStyle: TextStyle(
-                                        fontSize: size.width * 0.055,
-                                        fontWeight: FontWeight.w800,
-                                        fontFamily: 'Roboto'),
-                                    hintText: 'email',
+                          Divider(
+                            color: Colors.black54,
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                padding: EdgeInsets.only(right: 10),
+                                child: Text(
+                                  "Email",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 15,
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                child: TextField(
+                                  textAlign: TextAlign.right,
+                                  decoration: InputDecoration(
+                                    hintText: "email",
+                                    border: InputBorder.none,
+                                    isDense: true,
                                     hintStyle: TextStyle(
-                                        color: Colors.black26,
-                                        fontSize: size.width * 0.04,
-                                        textBaseline: TextBaseline.alphabetic),
-                                    floatingLabelBehavior:
-                                        FloatingLabelBehavior.always)),
+                                      color: Colors.black26,
+                                      fontSize: 15,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                         ],
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(
-                          left: 50, right: 50, top: 10, bottom: 10),
+                      margin: EdgeInsets.only(left: 50, right: 50, bottom: 10),
                       child: Text(
                         'The password for your new MQL5 account will be sent to the specified email address',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: size.width * 0.037,
+                          fontSize: 13,
+                          letterSpacing: 01,
                           fontFamily: 'Roboto',
-                          letterSpacing: 0.6,
                         ),
                         textAlign: TextAlign.center,
                         maxLines: 3,
                       ),
                     ),
-                    SizedBox(
-                      width: size.width / 1.4,
+                    Container(
+                      margin: EdgeInsets.symmetric(horizontal: 50),
                       child: FlatButton(
+                        minWidth: double.infinity,
                         onPressed: () {},
                         child: Text(
                           'Register',
@@ -173,28 +187,23 @@ class HomePage extends StatelessWidget {
                       style: TextStyle(color: Colors.white),
                     ),
                     Container(
-                      margin: EdgeInsets.only(top: 8),
-                      width: size.width / 1.4,
-                      height: size.height * 0.06,
+                      margin: EdgeInsets.symmetric(horizontal: 50),
                       child: FlatButton(
                         onPressed: () {},
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Image(
-                              image: AssetImage('images/fb.png'),
-                              width: size.width * 0.065,
-                            ),
-                            SizedBox(
-                              width: 5,
+                            Image.asset(
+                              'images/fb.png',
+                              scale: 25,
                             ),
                             Text(
-                              'Continue with Facebook',
+                              '  Continue with Facebook',
                               style: TextStyle(
                                   color: Colors.blue.shade900,
                                   fontFamily: 'Roboto',
                                   fontWeight: FontWeight.w500,
-                                  fontSize: size.width * 0.042),
+                                  fontSize: 12),
                             ),
                           ],
                         ),
