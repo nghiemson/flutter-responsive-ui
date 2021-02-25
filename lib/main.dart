@@ -67,45 +67,27 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: size.height * 0.05,
+                      height: size.height * 0.04,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Flexible(
-                          child: Text(
-                            'MQL',
-                            style: TextStyle(
-                              fontSize: 35,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.white,
-                              fontFamily: 'Trebuchet',
-                            ),
-                          ),
-                        ),
-                        Flexible(
-                            child: Text(
-                          '5',
-                          style: TextStyle(
-                              fontSize: 35,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.yellow.shade600,
-                              fontFamily: 'Trebuchet'),
-                        ))
-                      ],
-                    ),
+                    Container(
+                        width: size.width * 0.25,
+                        child: Image.asset('images/MQL5.png')),
                     SizedBox(
-                      height: size.height * 0.025,
+                      height: size.height * 0.02,
                     ),
-                    Flexible(
-                      child: Text(
-                        'Join Traders Community www.mql5.com',
-                        style: TextStyle(
-                          fontSize: 25,
-                          fontFamily: 'Roboto',
-                          color: Colors.white,
+                    Container(
+                      width: size.width * 0.75,
+                      child: Flexible(
+                        child: Text(
+                          'Join Traders Community www.mql5.com',
+                          style: TextStyle(
+                            fontSize: size.width * 0.065,
+                            fontFamily: 'Roboto',
+                            color: Colors.white,
+                          ),
+                          maxLines: 2,
+                          textAlign: TextAlign.center,
                         ),
-                        textAlign: TextAlign.center,
                       ),
                     ),
                     SizedBox(
@@ -113,7 +95,7 @@ class HomePage extends StatelessWidget {
                     ),
                     Container(
                       width: size.width * 0.7,
-                      height: size.height * 0.14,
+                      height: size.height * 0.13,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(3),
                           color: Colors.white),
@@ -132,7 +114,10 @@ class HomePage extends StatelessWidget {
                                         fontWeight: FontWeight.w800,
                                         fontFamily: 'Roboto'),
                                     hintText: 'enter login',
-                                    hintStyle: TextStyle(color: Colors.black26),
+                                    hintStyle: TextStyle(
+                                      color: Colors.black26,
+                                      fontSize: size.width * 0.04,
+                                    ),
                                     floatingLabelBehavior:
                                         FloatingLabelBehavior.always)),
                           ),
@@ -148,6 +133,7 @@ class HomePage extends StatelessWidget {
                                     hintText: 'email',
                                     hintStyle: TextStyle(
                                         color: Colors.black26,
+                                        fontSize: size.width * 0.04,
                                         textBaseline: TextBaseline.alphabetic),
                                     floatingLabelBehavior:
                                         FloatingLabelBehavior.always)),
@@ -161,9 +147,11 @@ class HomePage extends StatelessWidget {
                       child: Text(
                         'The password for your new MQL5 account will be sent to the specified email address',
                         style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 14,
-                            fontFamily: 'Roboto'),
+                          color: Colors.white,
+                          fontSize: size.width * 0.037,
+                          fontFamily: 'Roboto',
+                          letterSpacing: 0.6,
+                        ),
                         textAlign: TextAlign.center,
                         maxLines: 3,
                       ),
@@ -193,13 +181,11 @@ class HomePage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image(
-                              image: AssetImage(
-                                  'images/384px-Facebook_icon.svg.png'),
-                              width: size.width * 0.09,
-                              height: size.height * 0.035,
+                              image: AssetImage('images/fb.png'),
+                              width: size.width * 0.065,
                             ),
                             SizedBox(
-                              width: 10,
+                              width: 5,
                             ),
                             Text(
                               'Continue with Facebook',
