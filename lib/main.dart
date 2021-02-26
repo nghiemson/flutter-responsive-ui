@@ -67,10 +67,24 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     Container(
-                        margin: EdgeInsets.symmetric(horizontal: 115),
-                        child: Image.asset('images/MQL5.png')),
+                      margin: EdgeInsets.only(top: 20),
+                      child: RichText(
+                          text: TextSpan(children: [
+                        TextSpan(
+                            text: 'MQL',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 36)),
+                        TextSpan(
+                            text: '5',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 36,
+                                color: Colors.yellow.shade600))
+                      ])),
+                    ),
                     Container(
-                      margin: EdgeInsets.symmetric(horizontal: 25),
+                      margin:
+                          EdgeInsets.symmetric(horizontal: 25, vertical: 15),
                       child: Text(
                         'Join Traders Community www.mql5.com',
                         style: TextStyle(
@@ -86,7 +100,7 @@ class HomePage extends StatelessWidget {
                       padding: EdgeInsets.only(
                           left: 15, right: 15, top: 5, bottom: 5),
                       margin: EdgeInsets.only(
-                          bottom: 20, top: 20, left: 50, right: 50),
+                          bottom: 20, top: 20, left: 45, right: 45),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(3),
@@ -157,12 +171,12 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(left: 50, right: 50, bottom: 10),
+                      margin: EdgeInsets.only(left: 38, right: 38, bottom: 10),
                       child: Text(
                         'The password for your new MQL5 \naccount will be sent to the specified email \naddress',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 14,
+                          fontSize: 13,
                           fontFamily: 'Roboto',
                         ),
                         textAlign: TextAlign.center,
@@ -170,7 +184,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(horizontal: 50),
+                      margin: EdgeInsets.symmetric(horizontal: 45),
                       child: FlatButton(
                         minWidth: double.infinity,
                         onPressed: () {},
@@ -186,7 +200,7 @@ class HomePage extends StatelessWidget {
                       style: TextStyle(color: Colors.white),
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(horizontal: 50),
+                      margin: EdgeInsets.symmetric(horizontal: 45),
                       child: FlatButton(
                         onPressed: () {},
                         child: Row(
