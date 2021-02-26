@@ -159,11 +159,10 @@ class HomePage extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(left: 50, right: 50, bottom: 10),
                       child: Text(
-                        'The password for your new MQL5 account will be sent to the specified email address',
+                        'The password for your new MQL5 \naccount will be sent to the specified email \naddress',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 13,
-                          letterSpacing: 01,
+                          fontSize: 14,
                           fontFamily: 'Roboto',
                         ),
                         textAlign: TextAlign.center,
