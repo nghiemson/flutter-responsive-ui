@@ -22,5 +22,6 @@ samples, guidance on mobile development, and a full API reference.
 
 
 ## normal screen 
-![Screenshot_20210225-171512600](https://user-images.githubusercontent.com/39553951/109140430-2b92c600-778f-11eb-8e92-dec63138a8ee.jpg)
+![Screenshot_20210226-171321485](https://user-images.githubusercontent.com/39553951/109287416-1af95300-7856-11eb-8459-e2892fb5010a.jpg)
+
 
