@@ -32,7 +32,6 @@ class HomePage extends StatelessWidget {
             child: IntrinsicHeight(
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisSize: MainAxisSize.max,
                   children: <Widget>[
                     Container(
                       child: Stack(
@@ -83,8 +82,7 @@ class HomePage extends StatelessWidget {
                       ])),
                     ),
                     Container(
-                      margin:
-                          EdgeInsets.symmetric(horizontal: 25, vertical: 15),
+                      padding: EdgeInsets.only(top: 12),
                       child: Text(
                         'Join Traders Community www.mql5.com',
                         style: TextStyle(
@@ -96,131 +94,139 @@ class HomePage extends StatelessWidget {
                         textAlign: TextAlign.center,
                       ),
                     ),
-                    Container(
-                      padding: EdgeInsets.only(
-                          left: 15, right: 15, top: 5, bottom: 5),
-                      margin: EdgeInsets.only(
-                          bottom: 20, top: 20, left: 45, right: 45),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(3),
-                      ),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Row(
-                            children: [
-                              Container(
-                                padding: EdgeInsets.only(right: 10),
-                                child: Text(
-                                  "Login",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.w700,
-                                    fontSize: 15,
-                                  ),
-                                ),
-                              ),
-                              Expanded(
-                                child: TextField(
-                                  textAlign: TextAlign.right,
-                                  decoration: InputDecoration(
-                                    hintText: "enter login",
-                                    border: InputBorder.none,
-                                    isDense: true,
-                                    hintStyle: TextStyle(
-                                      color: Colors.black26,
-                                      fontSize: 15,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          Divider(
-                            color: Colors.black54,
-                          ),
-                          Row(
-                            children: [
-                              Container(
-                                padding: EdgeInsets.only(right: 10),
-                                child: Text(
-                                  "Email",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.w700,
-                                    fontSize: 15,
-                                  ),
-                                ),
-                              ),
-                              Expanded(
-                                child: TextField(
-                                  textAlign: TextAlign.right,
-                                  decoration: InputDecoration(
-                                    hintText: "email",
-                                    border: InputBorder.none,
-                                    isDense: true,
-                                    hintStyle: TextStyle(
-                                      color: Colors.black26,
-                                      fontSize: 15,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(left: 38, right: 38, bottom: 10),
-                      child: Text(
-                        'The password for your new MQL5 \naccount will be sent to the specified email \naddress',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 13,
-                          fontFamily: 'Roboto',
-                        ),
-                        textAlign: TextAlign.center,
-                        maxLines: 3,
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.symmetric(horizontal: 45),
-                      child: FlatButton(
-                        minWidth: double.infinity,
-                        onPressed: () {},
-                        child: Text(
-                          'Register',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        color: Colors.amber.shade500,
-                      ),
-                    ),
-                    Text(
-                      'or',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    Container(
-                      margin: EdgeInsets.symmetric(horizontal: 45),
-                      child: FlatButton(
-                        onPressed: () {},
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                    Expanded(
+                      child: Container(
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 35, vertical: 20),
+                        child: Column(
                           children: [
-                            Image.asset(
-                              'images/fb.png',
-                              scale: 25,
+                            Container(
+                              padding:
+                                  EdgeInsets.only(right: 15, top: 5, bottom: 5),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(3),
+                              ),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Container(
+                                        padding:
+                                            EdgeInsets.only(left: 10, top: 5),
+                                        child: Text(
+                                          "Login",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.w700,
+                                            fontSize: 15,
+                                          ),
+                                        ),
+                                      ),
+                                      Expanded(
+                                        child: TextField(
+                                          textAlign: TextAlign.right,
+                                          decoration: InputDecoration(
+                                            hintText: "enter login",
+                                            border: InputBorder.none,
+                                            isDense: true,
+                                            hintStyle: TextStyle(
+                                              color: Colors.black26,
+                                              fontSize: 15,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Divider(
+                                    color: Colors.black54,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Container(
+                                        padding: EdgeInsets.only(
+                                            left: 10, bottom: 10),
+                                        child: Text(
+                                          "Email",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.w700,
+                                            fontSize: 15,
+                                          ),
+                                        ),
+                                      ),
+                                      Expanded(
+                                        child: TextField(
+                                          textAlign: TextAlign.right,
+                                          decoration: InputDecoration(
+                                            hintText: "email",
+                                            border: InputBorder.none,
+                                            isDense: true,
+                                            hintStyle: TextStyle(
+                                              color: Colors.black26,
+                                              fontSize: 15,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(top: 15, bottom: 10),
+                              child: Text(
+                                'The password for your new MQL5 \naccount will be sent to the specified email \naddress',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 13,
+                                  fontFamily: 'Roboto',
+                                ),
+                                textAlign: TextAlign.center,
+                                maxLines: 3,
+                              ),
+                            ),
+                            Container(
+                              child: FlatButton(
+                                minWidth: double.infinity,
+                                onPressed: () {},
+                                child: Text(
+                                  'Register',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                color: Colors.amber.shade500,
+                              ),
                             ),
                             Text(
-                              '  Continue with Facebook',
-                              style: TextStyle(
-                                  color: Colors.blue.shade900,
-                                  fontFamily: 'Roboto',
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 12),
+                              'or',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            Container(
+                              child: FlatButton(
+                                onPressed: () {},
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Image.asset(
+                                      'images/fb.png',
+                                      scale: 25,
+                                    ),
+                                    Text(
+                                      '  Continue with Facebook',
+                                      style: TextStyle(
+                                          color: Colors.blue.shade900,
+                                          fontFamily: 'Roboto',
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 12),
+                                    ),
+                                  ],
+                                ),
+                                color: Colors.grey.shade200,
+                              ),
                             ),
                           ],
                         ),
-                        color: Colors.grey.shade200,
                       ),
                     ),
                   ]),
